@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# I used some tools parsing the data that don't need to be on github.
+private/*
+.vscode/*
