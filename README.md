@@ -1,4 +1,5 @@
 # Toki Pona API
+[![Build Status](https://travis-ci.org/ollybritton/toki-pona-api.svg?branch=master)](https://travis-ci.org/ollybritton/toki-pona-api)
 This is a flask application made for getting information about specific Toki Pona words. Visit [https://apis.ollybritton.com/toki-pona-api](https://apis.ollybritton.com/toki-pona-api) to find the list of endpoints and usage.
 
 ## Installing
