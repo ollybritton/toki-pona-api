@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.card {
+  margin-bottom: 1rem;
+}
+
+.endpoints-container {
+  margin-left: 1rem
+}

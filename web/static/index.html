@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Toki Pona API // Home Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/highlight.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Toki Pona <kbd>API</kbd></h1>
+      <p class="lead">This is an open-source JSON API for looking up information associated with the oligoisolating
+        constructed language <a href="https://www.wikiwand.com/en/Toki_Pona">Toki Pona</a>, a language designed to be
+        as simple and as easy to learn as possible.</p>
+    </div>
+  </div>
+
+  <div class="endpoints-container">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Endpoint #1: <kbd>/word/&lt;string:word&gt;</kbd></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Look up information associated to a word.</h6>
+        <p class="card-text">This endpoint allows you to find information associated with the word supplied. It returns
+          an JSON list containing a set of objects, each object representing a word that could possibly be linked to
+          the word given.</p>
+        <pre><code class="json" id="endpointExample1"></code></pre>
+        <h6>Example requests</h6>
+
+        <a href="/word/a">
+          <pre>/word/a</pre></a>
+        <a href="/word/ijo">
+          <pre>/word/ijo</pre></a>
+        <a href="/word/pakala">
+          <pre>/word/pakala</pre></a>
+        <a href="/word/xyz">
+          <pre>/word/xyz</pre></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Endpoint #2: <kbd>/data</kbd></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Get the raw data of the API.</h6>
+        <p class="card-text">The endpoint allows you to get the raw data from the API, a json object of word objects.</p>
+
+        <h6>Example requests</h6>
+        <a href="/data">
+          <pre>/data</pre></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Endpoint #3: <kbd>/random</kbd></h5>
+        <h6 class="card-subtitle mb-2 text-muted">Get a random word.</h6>
+        <p class="card-text">This endpoint allows you to fetch a random word from the API.</p>
+
+        <h6>Example requests</h6>
+        <a href="/random">
+          <pre>/random</pre></a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Contributing</h3>
+        <h6 class="card-subtitle mb-2 text-muted">Add stuff on GitHub.</h6>
+        <p class="card-text">You can contribute to this API by using the githup repository:</p>
+        <p class="card-text">
+          <a href="https://github.com/ollybritton/toki-pona-api">https://github.com/ollybritton/toki-pona-api</a>
+        </p>
+        <p class="card-text">It is written in Python using <kbd>flask</kbd> and <kbd>flask_restful</kbd>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js'></script>
+  <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+
+
+
+  <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
