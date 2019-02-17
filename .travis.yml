@@ -2,8 +2,8 @@
 language: python
 
 python:
- - "3.6"
+ - "3.7"
 
-install: pip install -e .
+install: pip3 install -e .
 
 script: python3 -m pytest tests/test.py
