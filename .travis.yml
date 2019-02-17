@@ -4,7 +4,7 @@ language: python
 python:
  - "3.7"
 
-install: pip3 install -e .
+install: pip3 install -r requirements.txt
 
 script: python3 -m pytest tests/test.py
 matrix:
