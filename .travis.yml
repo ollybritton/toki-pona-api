@@ -4,6 +4,6 @@ language: python
 python:
  - "3.6"
 
-install: pip install -e .
+install: pip install -e requirements.txt
 
 script: python3 -m pytest tests/test.py
