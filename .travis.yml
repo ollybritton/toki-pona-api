@@ -1,4 +1,9 @@
-language: python3
-script:
-  - pip3 install pytest
-  - python3 -m pytest -v
+
+language: python
+
+python:
+ - "3.6"
+
+install: pip install -e .
+
+script: python3 -m pytest tests/test.py
